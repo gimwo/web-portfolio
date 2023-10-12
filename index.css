@@ -1426,6 +1426,10 @@ textarea {
     width: 30rem;
   }
 
+  .intro-text {
+    align-items: center;
+  }
+
   .intro-sub-text {
     width: 30%;
     grid-template-columns: 1fr;
@@ -1453,10 +1457,7 @@ textarea {
     display: flex;
     flex-direction: column;
     max-width: 90vw;
-  }
-
-  .intro-text {
-    gap: 0rem;
+    margin-left: 2rem;
   }
   .intro-container {
     max-width: 100%;
