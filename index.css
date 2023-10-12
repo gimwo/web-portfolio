@@ -1298,7 +1298,7 @@ textarea {
   } */
 }
 
-@media (max-width: 54em) {
+@media (max-width: 57em) {
   .grid--2-cols {
     grid-template-columns: 2fr 1.5fr;
     margin: 0 2rem;
@@ -1356,7 +1356,7 @@ textarea {
   }
 
   .about--desc1::after {
-    top: -165%;
+    top: -125%;
     left: 80%;
   }
 
@@ -1409,9 +1409,23 @@ textarea {
   }
 }
 
+@media (max-width: 54em) {
+  .about--desc1::after {
+    top: -155%;
+    left: 80%;
+  }
+}
+
 @media (max-width: 48em) {
   .about--desc1::after {
     top: -200%;
+    left: 80%;
+  }
+}
+
+@media (max-width: 34em) {
+  .about--desc1::after {
+    top: -420%;
     left: 80%;
   }
 }
