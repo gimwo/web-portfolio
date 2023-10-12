@@ -1416,6 +1416,12 @@ textarea {
   }
 }
 
+@media (max-width: 52em) {
+  h3.hero--intro {
+    font-size: 1.1rem;
+  }
+}
+
 @media (max-width: 48em) {
   .about--desc1::after {
     top: -200%;
