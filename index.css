@@ -30,6 +30,14 @@ body {
   color: #278036;
 }
 
+.logo-link:link,
+.logo-link:hover,
+.logo-link:visited,
+.logo-link:active {
+  text-decoration: none;
+  color: #eee;
+}
+
 .nav-container {
   vertical-align: center;
   padding: 0 3rem 0 3rem;
@@ -286,7 +294,10 @@ ion-icon {
   gap: 0.7rem;
 }
 
-.hero--social-links a:link {
+.hero--social-links a:link,
+.hero--social-links a:visited,
+.hero--social-links a:hover,
+.hero--social-links a:active {
   fill: #22222286;
 }
 
@@ -350,7 +361,7 @@ ion-icon {
   background: radial-gradient(40rem at -15rem -5%, #1773d1 0%, transparent),
     radial-gradient(60rem at 110% 100%, #f58700 0%, transparent);
   padding-top: 13rem;
-  padding-bottom: 20rem;
+  padding-bottom: 15rem;
 }
 
 .about--heading {
@@ -477,7 +488,7 @@ ion-icon {
   content: "01";
   position: absolute;
   font-size: 8rem;
-  top: -108%;
+  top: -105%;
   left: 88%;
   font-weight: bold;
   color: hsla(0, 0%, 13%, 0.1);
@@ -538,7 +549,7 @@ ion-icon {
   grid-column: 1;
   max-width: 130rem;
   justify-self: center;
-  /* margin: 0 16rem; */
+  margin-top: 1.8rem;
 }
 
 .main-heading2 {
@@ -595,6 +606,58 @@ ion-icon {
   /* max-width: fit-content; */
 }
 
+.tag {
+  display: inline-block;
+  padding: 0em 0.3em;
+  margin-left: 0.2em;
+  border-radius: 100px;
+}
+
+.html-tag {
+  background-color: orange;
+}
+
+.css-tag {
+  background-color: rgb(0, 128, 255);
+}
+
+.boot-tag {
+  background-color: purple;
+}
+
+.js-tag {
+  background-color: yellow;
+  color: black;
+}
+
+.mongo-tag {
+  background-color: green;
+  color: black;
+}
+
+.express-tag {
+  background-color: #555;
+}
+
+.node-tag {
+  background-color: greenyellow;
+  color: black;
+}
+
+.react-tag {
+  background-color: #5aadff;
+  color: black;
+}
+
+.other-proj a:link,
+.other-proj a:visited {
+  color: #2bd553;
+}
+
+.other-proj a:hover,
+.other-proj a:active {
+  color: #87d69a;
+}
 .main-heading3 {
   font-size: 3rem;
   color: #eeeeee6c;
@@ -899,7 +962,7 @@ textarea {
 
 /* Media Queries */
 
-@media (max-width: 1637px) {
+@media (max-width: 103em) {
   .contact-me--grid {
     max-width: 60%;
   }
@@ -925,11 +988,11 @@ textarea {
   }
 
   .about--desc1::after {
-    top: -118%;
+    top: -123%;
   }
 }
 
-@media (max-width: 1480px) {
+@media (max-width: 93em) {
   .about--desc1::after {
     top: -130%;
   }
@@ -966,7 +1029,7 @@ textarea {
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 86em) {
   .contact-me--form-container input {
     width: 100%;
     height: 2rem;
@@ -984,6 +1047,11 @@ textarea {
   .about--desc2::after {
     top: -20%;
     left: 80%;
+  }
+
+  .about--desc5::after {
+    top: -13%;
+    left: 78%;
   }
 }
 
@@ -1201,10 +1269,11 @@ textarea {
 }
 
 @media (max-width: 961px) {
-  /* .grid--2-cols {
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-  } */
+  .grid--2-cols {
+    grid-template-columns: 2fr 1.5fr;
+    margin: 0 2rem;
+    padding-top: 2rem;
+  }
 
   /* .hero--main-intro {
     width: 100%;
@@ -1233,7 +1302,7 @@ textarea {
   } */
 }
 
-@media (max-width: 52em) {
+@media (max-width: 54em) {
   .grid--2-cols {
     grid-template-columns: 2fr 1.5fr;
     margin: 0 2rem;
@@ -1253,7 +1322,8 @@ textarea {
   }
 
   .grid--2-cols {
-    padding: 6rem 0;
+    padding: 8rem 0;
+    margin-left: 5rem;
   }
 
   h2.hero--intro-2 {
@@ -1320,7 +1390,7 @@ textarea {
   }
 
   .projects--container {
-    height: auto;
+    padding-top: 20;
   }
 
   .grid--projects {
@@ -1616,6 +1686,10 @@ textarea {
     font-size: 3.3rem;
   }
 
+  h2.hero--intro {
+    font-size: 0.9rem;
+  }
+
   .hero--intro-1 {
     font-size: 1rem;
   }
@@ -1628,10 +1702,6 @@ textarea {
 
   .hero--intro-1 {
     font-size: 1rem;
-  }
-
-  h2.hero--intro {
-    font-size: 0.9rem;
   }
 
   .main-heading {

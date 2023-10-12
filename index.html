@@ -24,9 +24,9 @@
     <!-- Navigation Bar -->
     <nav class="navbar sticky-top navbar-expand-lg" data-bs-theme="dark">
       <div
-        class="nav-container container-fluid d-flex flex-row justify-content-between"
+        class="nav-container container-fluid"
       >
-        <h2 id="logo"><span id="logo--dot">.</span>mcsa</h2>
+        <a class="logo-link" href="#landing"><h2 id="logo"><span id="logo--dot">.</span>mcsa</h2></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,7 +40,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav d-lg-flex d-md-block d-block">
             <li class="nav-item">
               <a class="nav-link" href="#about">about</a>
             </li>
@@ -54,7 +54,7 @@
               <a class="nav-link" href="#contact">contact</a>
             </li>
             <li class="nav-item">
-              <a class="btn-message" href="#">message me</a>
+              <a class="btn-message" href="#contact">message me</a>
             </li>
           </ul>
         </div>
@@ -258,7 +258,7 @@
               <span class="about--bold-text"
                 >the world of computers has always piqued my interest</span
               >. I am very passionate that I would always keep myself up to
-              date with the latest tech trends.
+              date with the latest tech trends. 
             </p>
           </div>
           <div class="desc">
@@ -273,7 +273,7 @@
           </div>
           <div class="desc">
             <p>
-              And now, my goal is to have a career aligning with my passion and fulfilling life.
+              And now, I am currently enrolled in the <span class="about--bold-text">Zuitt coding bootcamp</span> and my goal is to have a career aligning with my passion.
             </p>
           </div>
         </div>
@@ -296,32 +296,37 @@
         </div>
         <div class="projects">
           <div class="first-proj">
-            <a href="www.google.com" target="_blank">
+            <a href="https://github.com/gimwo/web-portfolio" target="_blank">
               <div class="proj-text">
                 <h2>Online Portfolio</h2>
                 <p>
-                  <span class="tag html-tag">HTML</span><span class="tag css-tag">CSS</span><span class="tag html-tag">Bootstrap</span>
+                  <span class="tag html-tag">HTML</span><span class="tag css-tag">CSS</span><span class="tag boot-tag">Bootstrap</span>
                 </p>
                 <p>Made in Zuitt coding bootcamp as my first capstone</p>
               </div>
             </a>
           </div>
           <div class="second-proj">
-            <a href="www.google.com" target="_blank">
+            <a href="https://github.com/gimwo" target="_blank">
               <div class="proj-text">
                 <h2>E-commerce API</h2>
                 <p>
-                  API database for an e-commerce website made with JavaScript,
-                  MongoDB, SQL
+                  <span class="tag js-tag">JavaScript</span><span class="tag mongo-tag">MongoDB</span><span class="tag express-tag">ExpressJS</span><span class="tag node-tag">NodeJS</span>
+                </p>
+                <p>
+                  API database for made with JavaScript, MongoDB, ExpressJS, and NodeJS
                 </p>
               </div>
             </a>
           </div>
           <div class="third-proj">
-            <a href="www.google.com" target="_blank">
+            <a href="https://github.com/gimwo" target="_blank">
               <div class="proj-text">
                 <h2>E-commerce Website</h2>
-                <p>An e-commerce website for video games made from React JS</p>
+                                <p>
+                  <span class="tag react-tag">React</span>
+                </p>
+                <p>An e-commerce website for video games made from ReactJS</p>
               </div>
             </a>
           </div>
@@ -332,7 +337,8 @@
             <img src="images/pokemon.png" alt="who's that pokemon project">
             <div>
             <h3>Who's that Pokemon?</h3>
-            <p>Made using Vanilla JS. Utilized DOM Manipulation and Basic Conditional statements. Sidenote: not mobile responsive</p>
+            <p>Made using Vanilla JS. Try it out and test your Pokemon knowledge. Utilized DOM Manipulation and Basic Conditional statements. Sidenote: not mobile responsive</p>
+            <a href="https://pokemongimwo.netlify.app">Netlify</a>
           </div>
           </div>
           <div class="other-proj">
@@ -340,6 +346,7 @@
             <div>
               <h3>Goal Tracker</h3>
               <p>Made using React JS. Created components using JSX syntax, utilized children, closures and lifting up states. Also not mobile responsive</p>
+            <a href="https://github.com/gimwo/scoreboard-reactpract/tree/master">GitHub</a>
             </div>
             
           </div>
@@ -347,7 +354,8 @@
             <img src="images/spotifyproj.png" alt="my spotify playlist maker project">
             <div>
             <h3>Spotify Time Machine</h3>
-            <p>Created using Python, beautifulSoup and Spotify API. Prompts the user to input a specific date and then return a Billboard's top 100 playlist on the Spotify app for that day</p>
+            <p>Created using Python, beautifulSoup and Spotify API. Prompts the user to input a specific date and then return a Billboard's top 100 playlist on the Spotify app for that day </p>
+            <a href="https://github.com/gimwo/spotify-playlist-maker">GitHub</a>
           </div>
           </div>
           
@@ -507,7 +515,7 @@
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#tools">Skills</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">Contact</a>
             </div>
           <div class="footer--links">
             <h2>Social Links</h2>
