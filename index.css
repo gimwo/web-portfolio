@@ -614,7 +614,7 @@ ion-icon {
 }
 
 .html-tag {
-  background-color: orange;
+  background-color: #ffa500;
 }
 
 .css-tag {
@@ -622,16 +622,16 @@ ion-icon {
 }
 
 .boot-tag {
-  background-color: purple;
+  background-color: #800080;
 }
 
 .js-tag {
-  background-color: yellow;
-  color: black;
+  background-color: #ffff00;
+  color: #000000;
 }
 
 .mongo-tag {
-  background-color: green;
+  background-color: #008000;
   color: black;
 }
 
@@ -640,8 +640,8 @@ ion-icon {
 }
 
 .node-tag {
-  background-color: greenyellow;
-  color: black;
+  background-color: #adff2f;
+  color: #000000;
 }
 
 .react-tag {
