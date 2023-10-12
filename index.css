@@ -1428,6 +1428,11 @@ textarea {
     top: -420%;
     left: 80%;
   }
+
+  .about--desc2::after {
+    top: -20%;
+    left: 60%;
+  }
 }
 
 @media (max-width: 26em) {
