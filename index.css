@@ -1681,6 +1681,22 @@ textarea {
   .hero--intro-1 {
     font-size: 1rem;
   }
+
+  .projects--heading {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .main-heading2 {
+    font-size: 3.6rem;
+  }
+
+  .proj-text {
+    top: 65%;
+    left: 0%;
+    align-items: start;
+    padding-left: 2rem;
+  }
 }
 
 @media (max-width: 23em) {
