@@ -1741,3 +1741,9 @@ textarea {
     font-size: 3rem;
   }
 }
+
+@media (max-width: 18em) {
+  .quick-links {
+    flex-direction: column;
+  }
+}
