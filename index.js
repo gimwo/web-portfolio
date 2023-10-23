@@ -19,7 +19,7 @@ const aboutDivs = document.querySelectorAll(".about--container div");
 // });
 // aboutDivs.forEach((aboutDiv) => aboutDivsObserver.observe(aboutDiv));
 // aboutDivsObserver.observe(aboutDivs);
-
+let lastScrollTop = 0;
 const scrollCheck = function () {
   let st = window.scrollY || document.documentElement.scrollTop;
 
@@ -67,5 +67,4 @@ const obsOptions = {
 const aboutObserver = new IntersectionObserver(obsCallback, obsOptions);
 aboutObserver.observe(aboutSec);
 
-let lastScrollTop = 0;
 // element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
