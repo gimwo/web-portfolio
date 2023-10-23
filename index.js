@@ -20,14 +20,28 @@ const aboutDivs = document.querySelectorAll(".about--container div");
 // aboutDivs.forEach((aboutDiv) => aboutDivsObserver.observe(aboutDiv));
 // aboutDivsObserver.observe(aboutDivs);
 
+const scrollCheck = function () {
+  let st = window.scrollY || document.documentElement.scrollTop;
+
+  if (st > lastScrollTop) {
+    // Do scroll down code
+    navBar.classList.add("navObs");
+  } else {
+    // Do scroll up code
+    navBar.classList.remove("navObs");
+  }
+
+  lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
+};
+
 const transpNav = function (entries) {
   const [entry] = entries;
 
   if (!entry.isIntersecting) {
-    navBar.classList.add("navObs");
+    window.addEventListener("scroll", scrollCheck, false);
   }
   if (entry.isIntersecting) {
-    navBar.classList.remove("navObs");
+    window.removeEventListener("scroll", scrollCheck, false);
   }
 };
 
@@ -52,3 +66,6 @@ const obsOptions = {
 
 const aboutObserver = new IntersectionObserver(obsCallback, obsOptions);
 aboutObserver.observe(aboutSec);
+
+let lastScrollTop = 0;
+// element should be replaced with the actual target element on which you have applied scroll, use window in case of no target element.
