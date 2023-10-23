@@ -376,7 +376,7 @@ ion-icon {
     radial-gradient(60rem at 110% 100%, #f58700 0%, transparent);
   padding-top: 13rem;
   padding-bottom: 15rem;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-out;
 }
 
 .about--heading {
