@@ -17,9 +17,22 @@ body {
   background: #eee;
 }
 
+.hide {
+  opacity: 0;
+  transform: translateY(-80px);
+}
+
 /* ***************************** */
 /******** Navigation Bar ********/
 /* ***************************** */
+.navObs {
+  opacity: 0.8;
+}
+
+.navObs:hover {
+  opacity: 1;
+}
+
 #logo {
   font-weight: 500;
   letter-spacing: -2.5px;
@@ -47,6 +60,7 @@ body {
   font-size: 1.5rem;
   background: #111;
   padding: 1rem 0 2rem 0;
+  transition: all 0.3s ease;
 }
 
 .nav-links {
@@ -362,6 +376,7 @@ ion-icon {
     radial-gradient(60rem at 110% 100%, #f58700 0%, transparent);
   padding-top: 13rem;
   padding-bottom: 15rem;
+  transition: all 0.5s ease-in;
 }
 
 .about--heading {
@@ -969,7 +984,7 @@ textarea {
 
   .proj-text {
     padding: 2rem;
-    top: 70%;
+    top: 75%;
     left: 0%;
   }
 
