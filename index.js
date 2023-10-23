@@ -1,6 +1,24 @@
 const landingSec = document.querySelector("#landing");
 const aboutSec = document.querySelector("#about");
 const navBar = document.querySelector("nav");
+const aboutDivs = document.querySelectorAll(".about--container div");
+
+//Will implement in a future update
+// const animatedAbout = function (entries) {
+//   entries.forEach((entry) => {
+//     console.log(entry);
+//     if (entry.isIntersecting) {
+//       entry.target.classList.remove("hide1");
+//     }
+//   });
+// };
+
+// const aboutDivsObserver = new IntersectionObserver(animatedAbout, {
+//   root: null,
+//   threshold: 0.5,
+// });
+// aboutDivs.forEach((aboutDiv) => aboutDivsObserver.observe(aboutDiv));
+// aboutDivsObserver.observe(aboutDivs);
 
 const transpNav = function (entries) {
   const [entry] = entries;
