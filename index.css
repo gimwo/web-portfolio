@@ -17,6 +17,23 @@ body {
   background: #eee;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ccc;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .hide {
   opacity: 0;
   transform: translateY(-80px);
